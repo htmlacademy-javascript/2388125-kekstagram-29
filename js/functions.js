@@ -32,4 +32,4 @@ function isPolindrom(rawString) {
 consol.log (isPolindrom('топот'));
 consol.log (isPolindrom('ДовОд'));
 consol.log (isPolindrom('Кекс'));
-consol.log (isPolindrom('Леша на полке клопа нашел'));
+consol.log(isPolindrom('Леша на полке клопа нашел'));
