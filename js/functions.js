@@ -12,15 +12,15 @@ function isLessOrEqual (string, length) {
 
 const isLessOrEqual1 = (string, length) => string.length <= length;
 
-(isLessOrEqual1('проверочная строка', 20));
-(isLessOrEqual1('проверочная строка', 18));
-(isLessOrEqual1('проверочная строка', 10));
+isLessOrEqual1('проверочная строка', 20);
+isLessOrEqual1('проверочная строка', 18);
+isLessOrEqual1('проверочная строка', 10);
 
 
 //Palindrom (здесь что то не так , но я ни как не сообрaжу)
 
-function isPolindrom(rawString) {
-  const string = rawString.replaceAll('', '').tolowerCase();
+function isPalindrom (rawString) {
+  const string = rawString.replaceAll(' ', '').toLowerCase();
   for (let i = 0; i < string.length / 2; i++) {
     if (string.at(i) !== string.at(-i - 1)) {
       return false;
@@ -29,8 +29,7 @@ function isPolindrom(rawString) {
   }
   return true;
 }
-
-(isPolindrom('топот'));
-(isPolindrom('ДовОд'));
-(isPolindrom('Кекс'));
-(isPolindrom('лёша на полке клопа нашёл'));
+isPalindrom ('топот');
+isPalindrom('ДовОд');
+isPalindrom('Кекс');
+isPalindrom('лёша на полке клопа нашёл');
