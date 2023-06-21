@@ -18,6 +18,7 @@ const isLessOrEqual1 = (string, length) => string.length <= length;
 
 
 //Palindrom (здесь что то не так , но я ни как не сообрaжу)
+
 function isPolindrom(rawString) {
   const string = rawString.replaceAll('', '').tolowerCase();
   for (let i = 0; i < string.length / 2; i++) {
@@ -32,4 +33,4 @@ function isPolindrom(rawString) {
 (isPolindrom('топот'));
 (isPolindrom('ДовОд'));
 (isPolindrom('Кекс'));
-(isPolindrom('Леша на полке клопа нашел'));
+(isPolindrom('лёша на полке клопа нашёл'));
