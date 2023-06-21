@@ -5,19 +5,19 @@ function isLessOrEqual (string, length) {
   return string.length <= length;
 }
 
-console.log (isLessOrEqual('проверочная строка', 20));
-console.log (isLessOrEqual('проверочная строка', 18));
-console.log (isLessOrEqual('проверочная строка', 10));
+(isLessOrEqual('проверочная строка', 20));
+(isLessOrEqual('проверочная строка', 18));
+(isLessOrEqual('проверочная строка', 10));
 
 
 const isLessOrEqual1 = (string, length) => string.length <= length;
 
-console.log (isLessOrEqual('проверочная строка', 20));
-console.log (isLessOrEqual('проверочная строка', 18));
-console.log (isLessOrEqual('проверочная строка', 10));
+(isLessOrEqual1('проверочная строка', 20));
+(isLessOrEqual1('проверочная строка', 18));
+(isLessOrEqual1('проверочная строка', 10));
 
 
-//Palindrom (здесь что то не так , но я ни как не сооброжу)
+//Palindrom (здесь что то не так , но я ни как не сообрaжу)
 function isPolindrom(rawString) {
   const string = rawString.replaceAll('', '').tolowerCase();
   for (let i = 0; i < string.length / 2; i++) {
@@ -29,7 +29,7 @@ function isPolindrom(rawString) {
   return true;
 }
 
-consol.log (isPolindrom('топот'));
-consol.log (isPolindrom('ДовОд'));
-consol.log (isPolindrom('Кекс'));
-consol.log(isPolindrom('Леша на полке клопа нашел'));
+(isPolindrom('топот'));
+(isPolindrom('ДовОд'));
+(isPolindrom('Кекс'));
+(isPolindrom('Леша на полке клопа нашел'));
