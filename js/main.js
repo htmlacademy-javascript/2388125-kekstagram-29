@@ -158,7 +158,7 @@ const createComents = () =>
     () => createComment(generateCommentId()),
   );
 
-// eslint-disable-next-line no-unused-vars
+
 const createPhoto = (id) => ({
   id,
   url: `Photos/${id}.jpg`,
@@ -166,7 +166,7 @@ const createPhoto = (id) => ({
   likes: getRandomIntegerInclusive(MIN_LIKES_COUNT, MAX_LIKES_COUNT),
   comments: createComents(),
 });
-// eslint-disable-next-line no-unused-vars
+
 const createPhotos = () => Array.from({length: PHOTO_ID}, (_, index) => {
   createPhotos(index + 1);
 });
