@@ -168,6 +168,8 @@ const createPhoto = (id) => ({
 });
 
 const createPhotos = () => Array.from({length: PHOTO_ID}, (_, index) => {
-  createPhotos(index + 1);
+  createPhoto(index + 1);
 });
 
+createPhoto();
+createPhotos();
