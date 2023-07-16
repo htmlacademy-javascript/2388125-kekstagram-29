@@ -89,7 +89,7 @@ const DESCRIPTION_FOTO = [
   'Сафари',
 
 
- const generateCommentId = createSequence(MIN_COMMENT_ID),
+ const generateCommentId = createSequence(MIN_COMMENT_ID);
 
 
 const createComment = (id) => ({
